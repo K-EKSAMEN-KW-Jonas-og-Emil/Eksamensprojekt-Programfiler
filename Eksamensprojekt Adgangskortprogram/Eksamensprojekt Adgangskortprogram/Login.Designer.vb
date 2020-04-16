@@ -84,4 +84,8 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        AdgangskortSide.Show()
+    End Sub
 End Class
