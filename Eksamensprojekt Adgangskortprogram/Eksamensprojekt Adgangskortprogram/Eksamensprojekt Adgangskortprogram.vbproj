@@ -79,6 +79,12 @@
     <Compile Include="AdgangskortSide.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ByggeriOgTransport.Designer.vb">
+      <DependentUpon>ByggeriOgTransport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ByggeriOgTransport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
@@ -109,6 +115,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AdgangskortSide.resx">
       <DependentUpon>AdgangskortSide.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ByggeriOgTransport.resx">
+      <DependentUpon>ByggeriOgTransport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -167,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

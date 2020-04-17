@@ -26,26 +26,14 @@ Partial Class AdgangskortSide
         Me.AdgangsSide_Filler = New System.Windows.Forms.Label()
         Me.DD_Biologi = New System.Windows.Forms.ComboBox()
         Me.DD_Dansk = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
-        Me.AK_PBox_Ernaering_Sundhed_Pleje = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Undervisning_Forskning = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Design_Kunst = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Naturvidenskab_Miljoe = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Samfund_Forvaltning = New System.Windows.Forms.PictureBox()
-        Me.AK_Pbox_IT_Teknik_Elektronik = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Film_Teater_Musik = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Kulter_Sprog_Kommunikation = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Forsvar_Politi = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering = New System.Windows.Forms.PictureBox()
-        Me.AK_PBox_Byggeri = New System.Windows.Forms.PictureBox()
+        Me.DD_Engelsk = New System.Windows.Forms.ComboBox()
+        Me.DD_Fysik = New System.Windows.Forms.ComboBox()
+        Me.DD_Idehistorie = New System.Windows.Forms.ComboBox()
+        Me.DD_Informatik = New System.Windows.Forms.ComboBox()
+        Me.DD_Kemi = New System.Windows.Forms.ComboBox()
+        Me.DD_Kommunikation_IT = New System.Windows.Forms.ComboBox()
+        Me.DD_Matematik = New System.Windows.Forms.ComboBox()
+        Me.DD_Samfundsfag = New System.Windows.Forms.ComboBox()
         Me.AK_Lbl_Byggeri_Transport = New System.Windows.Forms.Label()
         Me.AK_Lbl_Handel_Oekonomi_Markedsfoering = New System.Windows.Forms.Label()
         Me.AK_Lbl_Paedagogik_Psykologi_SocialeForhold = New System.Windows.Forms.Label()
@@ -59,6 +47,19 @@ Partial Class AdgangskortSide
         Me.AK_Lbl_Undervisning_Forskning = New System.Windows.Forms.Label()
         Me.AK_Lbl_Ernaering_Sundhed_Pleje = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.AK_PBox_Ernaering_Sundhed_Pleje = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Undervisning_Forskning = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Design_Kunst = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Naturvidenskab_Miljoe = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Samfund_Forvaltning = New System.Windows.Forms.PictureBox()
+        Me.AK_Pbox_IT_Teknik_Elektronik = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Film_Teater_Musik = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Kulter_Sprog_Kommunikation = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Forsvar_Politi = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering = New System.Windows.Forms.PictureBox()
+        Me.AK_PBox_Byggeri = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.AK_PBox_Ernaering_Sundhed_Pleje, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AK_PBox_Undervisning_Forskning, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AK_PBox_Design_Kunst, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,7 +96,7 @@ Partial Class AdgangskortSide
         '
         Me.DD_Biologi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.DD_Biologi.FormattingEnabled = True
-        Me.DD_Biologi.Items.AddRange(New Object() {"Biologi C", "Biologi B"})
+        Me.DD_Biologi.Items.AddRange(New Object() {"Biologi C", "Biologi B", " "})
         Me.DD_Biologi.Location = New System.Drawing.Point(27, 60)
         Me.DD_Biologi.Name = "DD_Biologi"
         Me.DD_Biologi.Size = New System.Drawing.Size(157, 21)
@@ -111,221 +112,90 @@ Partial Class AdgangskortSide
         Me.DD_Dansk.Size = New System.Drawing.Size(157, 21)
         Me.DD_Dansk.TabIndex = 3
         '
-        'ComboBox3
+        'DD_Engelsk
         '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Engelsk B", "Engelsk A"})
-        Me.ComboBox3.Location = New System.Drawing.Point(27, 132)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox3.TabIndex = 4
+        Me.DD_Engelsk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Engelsk.FormattingEnabled = True
+        Me.DD_Engelsk.Items.AddRange(New Object() {"Engelsk B", "Engelsk A", " "})
+        Me.DD_Engelsk.Location = New System.Drawing.Point(27, 132)
+        Me.DD_Engelsk.Name = "DD_Engelsk"
+        Me.DD_Engelsk.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Engelsk.TabIndex = 4
         '
-        'ComboBox4
+        'DD_Fysik
         '
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Fysik B", "Fysik A"})
-        Me.ComboBox4.Location = New System.Drawing.Point(27, 168)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox4.TabIndex = 5
+        Me.DD_Fysik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Fysik.FormattingEnabled = True
+        Me.DD_Fysik.Items.AddRange(New Object() {"Fysik B", "Fysik A", " "})
+        Me.DD_Fysik.Location = New System.Drawing.Point(27, 168)
+        Me.DD_Fysik.Name = "DD_Fysik"
+        Me.DD_Fysik.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Fysik.TabIndex = 5
         '
-        'ComboBox5
+        'DD_Idehistorie
         '
-        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"Idéhistorie B"})
-        Me.ComboBox5.Location = New System.Drawing.Point(27, 204)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox5.TabIndex = 6
+        Me.DD_Idehistorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Idehistorie.FormattingEnabled = True
+        Me.DD_Idehistorie.Items.AddRange(New Object() {"Idéhistorie B", " "})
+        Me.DD_Idehistorie.Location = New System.Drawing.Point(27, 204)
+        Me.DD_Idehistorie.Name = "DD_Idehistorie"
+        Me.DD_Idehistorie.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Idehistorie.TabIndex = 6
         '
-        'ComboBox6
+        'DD_Informatik
         '
-        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"Informatik C", "Informatik B"})
-        Me.ComboBox6.Location = New System.Drawing.Point(27, 240)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox6.TabIndex = 7
+        Me.DD_Informatik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Informatik.FormattingEnabled = True
+        Me.DD_Informatik.Items.AddRange(New Object() {"Informatik C", "Informatik B", " "})
+        Me.DD_Informatik.Location = New System.Drawing.Point(27, 240)
+        Me.DD_Informatik.Name = "DD_Informatik"
+        Me.DD_Informatik.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Informatik.TabIndex = 7
         '
-        'ComboBox7
+        'DD_Kemi
         '
-        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Items.AddRange(New Object() {"Kemi B", "Kemi A"})
-        Me.ComboBox7.Location = New System.Drawing.Point(27, 276)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox7.TabIndex = 8
+        Me.DD_Kemi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Kemi.FormattingEnabled = True
+        Me.DD_Kemi.Items.AddRange(New Object() {"Kemi B", "Kemi A", " "})
+        Me.DD_Kemi.Location = New System.Drawing.Point(27, 276)
+        Me.DD_Kemi.Name = "DD_Kemi"
+        Me.DD_Kemi.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Kemi.TabIndex = 8
         '
-        'ComboBox8
+        'DD_Kommunikation_IT
         '
-        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Items.AddRange(New Object() {"Kommunikation/it C", "Kommunikation/it B"})
-        Me.ComboBox8.Location = New System.Drawing.Point(27, 312)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox8.TabIndex = 9
+        Me.DD_Kommunikation_IT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Kommunikation_IT.FormattingEnabled = True
+        Me.DD_Kommunikation_IT.Items.AddRange(New Object() {"Kommunikation/IT C", "Kommunikation/IT A", " "})
+        Me.DD_Kommunikation_IT.Location = New System.Drawing.Point(27, 312)
+        Me.DD_Kommunikation_IT.Name = "DD_Kommunikation_IT"
+        Me.DD_Kommunikation_IT.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Kommunikation_IT.TabIndex = 9
         '
-        'ComboBox9
+        'DD_Matematik
         '
-        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Items.AddRange(New Object() {"Matematik B", "Matematik A"})
-        Me.ComboBox9.Location = New System.Drawing.Point(27, 348)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox9.TabIndex = 10
+        Me.DD_Matematik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Matematik.FormattingEnabled = True
+        Me.DD_Matematik.Items.AddRange(New Object() {"Matematik B", "Matematik A", " "})
+        Me.DD_Matematik.Location = New System.Drawing.Point(27, 348)
+        Me.DD_Matematik.Name = "DD_Matematik"
+        Me.DD_Matematik.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Matematik.TabIndex = 10
         '
-        'ComboBox10
+        'DD_Samfundsfag
         '
-        Me.ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Items.AddRange(New Object() {"Samfundsfag C", "Samfundsfag B"})
-        Me.ComboBox10.Location = New System.Drawing.Point(27, 384)
-        Me.ComboBox10.Name = "ComboBox10"
-        Me.ComboBox10.Size = New System.Drawing.Size(157, 21)
-        Me.ComboBox10.TabIndex = 11
-        '
-        'AK_PBox_Ernaering_Sundhed_Pleje
-        '
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._12
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.Location = New System.Drawing.Point(575, 354)
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.Name = "AK_PBox_Ernaering_Sundhed_Pleje"
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.TabIndex = 23
-        Me.AK_PBox_Ernaering_Sundhed_Pleje.TabStop = False
-        '
-        'AK_PBox_Undervisning_Forskning
-        '
-        Me.AK_PBox_Undervisning_Forskning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Undervisning_Forskning.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._9
-        Me.AK_PBox_Undervisning_Forskning.Location = New System.Drawing.Point(575, 246)
-        Me.AK_PBox_Undervisning_Forskning.Name = "AK_PBox_Undervisning_Forskning"
-        Me.AK_PBox_Undervisning_Forskning.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Undervisning_Forskning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Undervisning_Forskning.TabIndex = 22
-        Me.AK_PBox_Undervisning_Forskning.TabStop = False
-        '
-        'AK_PBox_Design_Kunst
-        '
-        Me.AK_PBox_Design_Kunst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Design_Kunst.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._6
-        Me.AK_PBox_Design_Kunst.Location = New System.Drawing.Point(575, 138)
-        Me.AK_PBox_Design_Kunst.Name = "AK_PBox_Design_Kunst"
-        Me.AK_PBox_Design_Kunst.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Design_Kunst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Design_Kunst.TabIndex = 21
-        Me.AK_PBox_Design_Kunst.TabStop = False
-        '
-        'AK_PBox_Naturvidenskab_Miljoe
-        '
-        Me.AK_PBox_Naturvidenskab_Miljoe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Naturvidenskab_Miljoe.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._3
-        Me.AK_PBox_Naturvidenskab_Miljoe.Location = New System.Drawing.Point(575, 31)
-        Me.AK_PBox_Naturvidenskab_Miljoe.Name = "AK_PBox_Naturvidenskab_Miljoe"
-        Me.AK_PBox_Naturvidenskab_Miljoe.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Naturvidenskab_Miljoe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Naturvidenskab_Miljoe.TabIndex = 20
-        Me.AK_PBox_Naturvidenskab_Miljoe.TabStop = False
-        '
-        'AK_PBox_Samfund_Forvaltning
-        '
-        Me.AK_PBox_Samfund_Forvaltning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Samfund_Forvaltning.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._11
-        Me.AK_PBox_Samfund_Forvaltning.Location = New System.Drawing.Point(412, 354)
-        Me.AK_PBox_Samfund_Forvaltning.Name = "AK_PBox_Samfund_Forvaltning"
-        Me.AK_PBox_Samfund_Forvaltning.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Samfund_Forvaltning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Samfund_Forvaltning.TabIndex = 19
-        Me.AK_PBox_Samfund_Forvaltning.TabStop = False
-        '
-        'AK_Pbox_IT_Teknik_Elektronik
-        '
-        Me.AK_Pbox_IT_Teknik_Elektronik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_Pbox_IT_Teknik_Elektronik.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._8
-        Me.AK_Pbox_IT_Teknik_Elektronik.Location = New System.Drawing.Point(412, 246)
-        Me.AK_Pbox_IT_Teknik_Elektronik.Name = "AK_Pbox_IT_Teknik_Elektronik"
-        Me.AK_Pbox_IT_Teknik_Elektronik.Size = New System.Drawing.Size(133, 77)
-        Me.AK_Pbox_IT_Teknik_Elektronik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_Pbox_IT_Teknik_Elektronik.TabIndex = 18
-        Me.AK_Pbox_IT_Teknik_Elektronik.TabStop = False
-        '
-        'AK_PBox_Film_Teater_Musik
-        '
-        Me.AK_PBox_Film_Teater_Musik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Film_Teater_Musik.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._5
-        Me.AK_PBox_Film_Teater_Musik.Location = New System.Drawing.Point(412, 138)
-        Me.AK_PBox_Film_Teater_Musik.Name = "AK_PBox_Film_Teater_Musik"
-        Me.AK_PBox_Film_Teater_Musik.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Film_Teater_Musik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Film_Teater_Musik.TabIndex = 17
-        Me.AK_PBox_Film_Teater_Musik.TabStop = False
-        '
-        'AK_PBox_Kulter_Sprog_Kommunikation
-        '
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._2
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.Location = New System.Drawing.Point(412, 31)
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.Name = "AK_PBox_Kulter_Sprog_Kommunikation"
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.TabIndex = 16
-        Me.AK_PBox_Kulter_Sprog_Kommunikation.TabStop = False
-        '
-        'AK_PBox_Forsvar_Politi
-        '
-        Me.AK_PBox_Forsvar_Politi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Forsvar_Politi.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._10
-        Me.AK_PBox_Forsvar_Politi.Location = New System.Drawing.Point(246, 354)
-        Me.AK_PBox_Forsvar_Politi.Name = "AK_PBox_Forsvar_Politi"
-        Me.AK_PBox_Forsvar_Politi.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Forsvar_Politi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Forsvar_Politi.TabIndex = 15
-        Me.AK_PBox_Forsvar_Politi.TabStop = False
-        '
-        'AK_PBox_Pædagogik_Psykologi_SocialeForhold
-        '
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._7
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Location = New System.Drawing.Point(246, 246)
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Name = "AK_PBox_Pædagogik_Psykologi_SocialeForhold"
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.TabIndex = 14
-        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.TabStop = False
-        '
-        'AK_PBox_Handel_Oekonomi_Markedsfoering
-        '
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._4
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Location = New System.Drawing.Point(246, 138)
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Name = "AK_PBox_Handel_Oekonomi_Markedsfoering"
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.TabIndex = 13
-        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.TabStop = False
-        '
-        'AK_PBox_Byggeri
-        '
-        Me.AK_PBox_Byggeri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AK_PBox_Byggeri.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._1
-        Me.AK_PBox_Byggeri.Location = New System.Drawing.Point(246, 31)
-        Me.AK_PBox_Byggeri.Name = "AK_PBox_Byggeri"
-        Me.AK_PBox_Byggeri.Size = New System.Drawing.Size(133, 77)
-        Me.AK_PBox_Byggeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AK_PBox_Byggeri.TabIndex = 12
-        Me.AK_PBox_Byggeri.TabStop = False
+        Me.DD_Samfundsfag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.DD_Samfundsfag.FormattingEnabled = True
+        Me.DD_Samfundsfag.Items.AddRange(New Object() {"Samfundsfag C", "Samfundsfag B", " "})
+        Me.DD_Samfundsfag.Location = New System.Drawing.Point(27, 384)
+        Me.DD_Samfundsfag.Name = "DD_Samfundsfag"
+        Me.DD_Samfundsfag.Size = New System.Drawing.Size(157, 21)
+        Me.DD_Samfundsfag.TabIndex = 11
         '
         'AK_Lbl_Byggeri_Transport
         '
         Me.AK_Lbl_Byggeri_Transport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_Lbl_Byggeri_Transport.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AK_Lbl_Byggeri_Transport.Location = New System.Drawing.Point(246, 106)
         Me.AK_Lbl_Byggeri_Transport.Name = "AK_Lbl_Byggeri_Transport"
         Me.AK_Lbl_Byggeri_Transport.Size = New System.Drawing.Size(133, 29)
@@ -452,11 +322,154 @@ Partial Class AdgangskortSide
         Me.Label1.Text = "0"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'AK_PBox_Ernaering_Sundhed_Pleje
+        '
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._12
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.Location = New System.Drawing.Point(575, 354)
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.Name = "AK_PBox_Ernaering_Sundhed_Pleje"
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.TabIndex = 23
+        Me.AK_PBox_Ernaering_Sundhed_Pleje.TabStop = False
+        '
+        'AK_PBox_Undervisning_Forskning
+        '
+        Me.AK_PBox_Undervisning_Forskning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Undervisning_Forskning.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._9
+        Me.AK_PBox_Undervisning_Forskning.Location = New System.Drawing.Point(575, 246)
+        Me.AK_PBox_Undervisning_Forskning.Name = "AK_PBox_Undervisning_Forskning"
+        Me.AK_PBox_Undervisning_Forskning.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Undervisning_Forskning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Undervisning_Forskning.TabIndex = 22
+        Me.AK_PBox_Undervisning_Forskning.TabStop = False
+        '
+        'AK_PBox_Design_Kunst
+        '
+        Me.AK_PBox_Design_Kunst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Design_Kunst.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._6
+        Me.AK_PBox_Design_Kunst.Location = New System.Drawing.Point(575, 138)
+        Me.AK_PBox_Design_Kunst.Name = "AK_PBox_Design_Kunst"
+        Me.AK_PBox_Design_Kunst.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Design_Kunst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Design_Kunst.TabIndex = 21
+        Me.AK_PBox_Design_Kunst.TabStop = False
+        '
+        'AK_PBox_Naturvidenskab_Miljoe
+        '
+        Me.AK_PBox_Naturvidenskab_Miljoe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Naturvidenskab_Miljoe.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._3
+        Me.AK_PBox_Naturvidenskab_Miljoe.Location = New System.Drawing.Point(575, 31)
+        Me.AK_PBox_Naturvidenskab_Miljoe.Name = "AK_PBox_Naturvidenskab_Miljoe"
+        Me.AK_PBox_Naturvidenskab_Miljoe.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Naturvidenskab_Miljoe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Naturvidenskab_Miljoe.TabIndex = 20
+        Me.AK_PBox_Naturvidenskab_Miljoe.TabStop = False
+        '
+        'AK_PBox_Samfund_Forvaltning
+        '
+        Me.AK_PBox_Samfund_Forvaltning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Samfund_Forvaltning.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._11
+        Me.AK_PBox_Samfund_Forvaltning.Location = New System.Drawing.Point(412, 354)
+        Me.AK_PBox_Samfund_Forvaltning.Name = "AK_PBox_Samfund_Forvaltning"
+        Me.AK_PBox_Samfund_Forvaltning.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Samfund_Forvaltning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Samfund_Forvaltning.TabIndex = 19
+        Me.AK_PBox_Samfund_Forvaltning.TabStop = False
+        '
+        'AK_Pbox_IT_Teknik_Elektronik
+        '
+        Me.AK_Pbox_IT_Teknik_Elektronik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_Pbox_IT_Teknik_Elektronik.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._8
+        Me.AK_Pbox_IT_Teknik_Elektronik.Location = New System.Drawing.Point(412, 246)
+        Me.AK_Pbox_IT_Teknik_Elektronik.Name = "AK_Pbox_IT_Teknik_Elektronik"
+        Me.AK_Pbox_IT_Teknik_Elektronik.Size = New System.Drawing.Size(133, 77)
+        Me.AK_Pbox_IT_Teknik_Elektronik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_Pbox_IT_Teknik_Elektronik.TabIndex = 18
+        Me.AK_Pbox_IT_Teknik_Elektronik.TabStop = False
+        '
+        'AK_PBox_Film_Teater_Musik
+        '
+        Me.AK_PBox_Film_Teater_Musik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Film_Teater_Musik.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._5
+        Me.AK_PBox_Film_Teater_Musik.Location = New System.Drawing.Point(412, 138)
+        Me.AK_PBox_Film_Teater_Musik.Name = "AK_PBox_Film_Teater_Musik"
+        Me.AK_PBox_Film_Teater_Musik.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Film_Teater_Musik.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Film_Teater_Musik.TabIndex = 17
+        Me.AK_PBox_Film_Teater_Musik.TabStop = False
+        '
+        'AK_PBox_Kulter_Sprog_Kommunikation
+        '
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._2
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.Location = New System.Drawing.Point(412, 31)
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.Name = "AK_PBox_Kulter_Sprog_Kommunikation"
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.TabIndex = 16
+        Me.AK_PBox_Kulter_Sprog_Kommunikation.TabStop = False
+        '
+        'AK_PBox_Forsvar_Politi
+        '
+        Me.AK_PBox_Forsvar_Politi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Forsvar_Politi.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._10
+        Me.AK_PBox_Forsvar_Politi.Location = New System.Drawing.Point(246, 354)
+        Me.AK_PBox_Forsvar_Politi.Name = "AK_PBox_Forsvar_Politi"
+        Me.AK_PBox_Forsvar_Politi.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Forsvar_Politi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Forsvar_Politi.TabIndex = 15
+        Me.AK_PBox_Forsvar_Politi.TabStop = False
+        '
+        'AK_PBox_Pædagogik_Psykologi_SocialeForhold
+        '
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._7
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Location = New System.Drawing.Point(246, 246)
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Name = "AK_PBox_Pædagogik_Psykologi_SocialeForhold"
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.TabIndex = 14
+        Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold.TabStop = False
+        '
+        'AK_PBox_Handel_Oekonomi_Markedsfoering
+        '
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._4
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Location = New System.Drawing.Point(246, 138)
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Name = "AK_PBox_Handel_Oekonomi_Markedsfoering"
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.TabIndex = 13
+        Me.AK_PBox_Handel_Oekonomi_Markedsfoering.TabStop = False
+        '
+        'AK_PBox_Byggeri
+        '
+        Me.AK_PBox_Byggeri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AK_PBox_Byggeri.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AK_PBox_Byggeri.Image = Global.Eksamensprojekt_Adgangskortprogram.My.Resources.Resources._1
+        Me.AK_PBox_Byggeri.Location = New System.Drawing.Point(246, 31)
+        Me.AK_PBox_Byggeri.Name = "AK_PBox_Byggeri"
+        Me.AK_PBox_Byggeri.Size = New System.Drawing.Size(133, 77)
+        Me.AK_PBox_Byggeri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AK_PBox_Byggeri.TabIndex = 12
+        Me.AK_PBox_Byggeri.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(83, 435)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 37
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'AdgangskortSide
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 474)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.AK_Lbl_Ernaering_Sundhed_Pleje)
         Me.Controls.Add(Me.AK_Lbl_Undervisning_Forskning)
@@ -482,14 +495,14 @@ Partial Class AdgangskortSide
         Me.Controls.Add(Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold)
         Me.Controls.Add(Me.AK_PBox_Handel_Oekonomi_Markedsfoering)
         Me.Controls.Add(Me.AK_PBox_Byggeri)
-        Me.Controls.Add(Me.ComboBox10)
-        Me.Controls.Add(Me.ComboBox9)
-        Me.Controls.Add(Me.ComboBox8)
-        Me.Controls.Add(Me.ComboBox7)
-        Me.Controls.Add(Me.ComboBox6)
-        Me.Controls.Add(Me.ComboBox5)
-        Me.Controls.Add(Me.ComboBox4)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.DD_Samfundsfag)
+        Me.Controls.Add(Me.DD_Matematik)
+        Me.Controls.Add(Me.DD_Kommunikation_IT)
+        Me.Controls.Add(Me.DD_Kemi)
+        Me.Controls.Add(Me.DD_Informatik)
+        Me.Controls.Add(Me.DD_Idehistorie)
+        Me.Controls.Add(Me.DD_Fysik)
+        Me.Controls.Add(Me.DD_Engelsk)
         Me.Controls.Add(Me.DD_Dansk)
         Me.Controls.Add(Me.DD_Biologi)
         Me.Controls.Add(Me.AdgangsSide_Filler)
@@ -517,14 +530,14 @@ Partial Class AdgangskortSide
     Friend WithEvents AdgangsSide_Filler As Label
     Friend WithEvents DD_Biologi As ComboBox
     Friend WithEvents DD_Dansk As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents ComboBox7 As ComboBox
-    Friend WithEvents ComboBox8 As ComboBox
-    Friend WithEvents ComboBox9 As ComboBox
-    Friend WithEvents ComboBox10 As ComboBox
+    Friend WithEvents DD_Engelsk As ComboBox
+    Friend WithEvents DD_Fysik As ComboBox
+    Friend WithEvents DD_Idehistorie As ComboBox
+    Friend WithEvents DD_Informatik As ComboBox
+    Friend WithEvents DD_Kemi As ComboBox
+    Friend WithEvents DD_Kommunikation_IT As ComboBox
+    Friend WithEvents DD_Matematik As ComboBox
+    Friend WithEvents DD_Samfundsfag As ComboBox
     Friend WithEvents AK_PBox_Byggeri As PictureBox
     Friend WithEvents AK_PBox_Handel_Oekonomi_Markedsfoering As PictureBox
     Friend WithEvents AK_PBox_Pædagogik_Psykologi_SocialeForhold As PictureBox
@@ -550,4 +563,5 @@ Partial Class AdgangskortSide
     Friend WithEvents AK_Lbl_Undervisning_Forskning As Label
     Friend WithEvents AK_Lbl_Ernaering_Sundhed_Pleje As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class
