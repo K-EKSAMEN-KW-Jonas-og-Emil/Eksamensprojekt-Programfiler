@@ -46,7 +46,7 @@ Partial Class AdgangskortSide
         Me.AK_Lbl_Desgin_Kunst = New System.Windows.Forms.Label()
         Me.AK_Lbl_Undervisning_Forskning = New System.Windows.Forms.Label()
         Me.AK_Lbl_Ernaering_Sundhed_Pleje = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lbl_Available_Byggeri_Transport = New System.Windows.Forms.Label()
         Me.AK_PBox_Ernaering_Sundhed_Pleje = New System.Windows.Forms.PictureBox()
         Me.AK_PBox_Undervisning_Forskning = New System.Windows.Forms.PictureBox()
         Me.AK_PBox_Design_Kunst = New System.Windows.Forms.PictureBox()
@@ -59,7 +59,6 @@ Partial Class AdgangskortSide
         Me.AK_PBox_Pædagogik_Psykologi_SocialeForhold = New System.Windows.Forms.PictureBox()
         Me.AK_PBox_Handel_Oekonomi_Markedsfoering = New System.Windows.Forms.PictureBox()
         Me.AK_PBox_Byggeri = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.AK_PBox_Ernaering_Sundhed_Pleje, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AK_PBox_Undervisning_Forskning, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AK_PBox_Design_Kunst, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,7 +105,7 @@ Partial Class AdgangskortSide
         '
         Me.DD_Dansk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.DD_Dansk.FormattingEnabled = True
-        Me.DD_Dansk.Items.AddRange(New Object() {"Dansk A"})
+        Me.DD_Dansk.Items.AddRange(New Object() {"Dansk A", " "})
         Me.DD_Dansk.Location = New System.Drawing.Point(27, 96)
         Me.DD_Dansk.Name = "DD_Dansk"
         Me.DD_Dansk.Size = New System.Drawing.Size(157, 21)
@@ -313,14 +312,14 @@ Partial Class AdgangskortSide
         Me.AK_Lbl_Ernaering_Sundhed_Pleje.Text = "Ernæring - Sundhed - Pleje"
         Me.AK_Lbl_Ernaering_Sundhed_Pleje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'Lbl_Available_Byggeri_Transport
         '
-        Me.Label1.Location = New System.Drawing.Point(357, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 21)
-        Me.Label1.TabIndex = 36
-        Me.Label1.Text = "0"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Lbl_Available_Byggeri_Transport.Location = New System.Drawing.Point(357, 32)
+        Me.Lbl_Available_Byggeri_Transport.Name = "Lbl_Available_Byggeri_Transport"
+        Me.Lbl_Available_Byggeri_Transport.Size = New System.Drawing.Size(21, 21)
+        Me.Lbl_Available_Byggeri_Transport.TabIndex = 36
+        Me.Lbl_Available_Byggeri_Transport.Text = "0"
+        Me.Lbl_Available_Byggeri_Transport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'AK_PBox_Ernaering_Sundhed_Pleje
         '
@@ -455,22 +454,12 @@ Partial Class AdgangskortSide
         Me.AK_PBox_Byggeri.TabIndex = 12
         Me.AK_PBox_Byggeri.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(83, 435)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'AdgangskortSide
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 474)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Lbl_Available_Byggeri_Transport)
         Me.Controls.Add(Me.AK_Lbl_Ernaering_Sundhed_Pleje)
         Me.Controls.Add(Me.AK_Lbl_Undervisning_Forskning)
         Me.Controls.Add(Me.AK_Lbl_Desgin_Kunst)
@@ -562,6 +551,5 @@ Partial Class AdgangskortSide
     Friend WithEvents AK_Lbl_Desgin_Kunst As Label
     Friend WithEvents AK_Lbl_Undervisning_Forskning As Label
     Friend WithEvents AK_Lbl_Ernaering_Sundhed_Pleje As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Lbl_Available_Byggeri_Transport As Label
 End Class

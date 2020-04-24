@@ -21,6 +21,7 @@
     Dim MaA As Boolean = False
     Dim SamfC As Boolean = False
     Dim SamfB As Boolean = False
+    Dim available As Integer = 0
 
 
     Private Sub DD_Biologi_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Biologi.SelectedIndexChanged
@@ -34,7 +35,8 @@
             BioC = False
             BioB = False
         End If
-
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Dansk_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Dansk.SelectedIndexChanged
@@ -43,6 +45,8 @@
         Else
             DaA = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Engelsk_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Engelsk.SelectedIndexChanged
@@ -59,6 +63,8 @@
             EnB = False
             EnC = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Fysik_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Fysik.SelectedIndexChanged
@@ -75,14 +81,18 @@
             FyB = False
             FyC = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Idehistorie_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Idehistorie.SelectedIndexChanged
-        If DD_Idehistorie.Text = "Idéhistorie" Then
+        If DD_Idehistorie.Text = "Idéhistorie B" Then
             IhB = True
         Else
             IhB = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Informatik_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Informatik.SelectedIndexChanged
@@ -96,6 +106,8 @@
             InfC = False
             InfB = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Kemi_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Kemi.SelectedIndexChanged
@@ -112,6 +124,8 @@
             KeB = False
             KeA = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Kommunikation_IT_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Kommunikation_IT.SelectedIndexChanged
@@ -125,6 +139,8 @@
             KitC = False
             KitA = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Matematik_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Matematik.SelectedIndexChanged
@@ -141,6 +157,8 @@
             MaA = False
             MaC = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub DD_Samfundsfag_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DD_Samfundsfag.SelectedIndexChanged
@@ -154,6 +172,8 @@
             SamfC = False
             SamfB = False
         End If
+        ByggeriOgTransport.ClearLists()
+        UddannelsesUpdate()
     End Sub
 
     Private Sub AK_PBox_Byggeri_Click(sender As Object, e As EventArgs) Handles AK_PBox_Byggeri.Click
@@ -170,20 +190,21 @@
 
     Private Sub UddannelsesUpdate()
         Arkitektur()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        UddannelsesUpdate()
+        TransportOgLogistik()
+        available = ByggeriOgTransport.LBox_Byggeri.Items.Count + ByggeriOgTransport.LBox_Transport.Items.Count
+        Lbl_Available_Byggeri_Transport.Text = available.ToString()
     End Sub
 
     Private Sub Arkitektur()
         ByggeriOgTransport.LBox_Byggeri.Items.Add("Arkitekt")
         ByggeriOgTransport.LBox_Byggeri.Items.Add("Byggekoordinator")
+        'Dansk A og Matematik A og Engelsk B
         If DaA = True And MaA = True And EnB = True Then
             ByggeriOgTransport.LBox_Byggeri.Items.Add("Diplomingeniør - Bygning")
             ByggeriOgTransport.LBox_Byggeri.Items.Add("Diplomingeniør - Bygningsdesign")
             ByggeriOgTransport.LBox_Byggeri.Items.Add("Energi")
             ByggeriOgTransport.LBox_Byggeri.Items.Add("Landinspektørvidenskab")
+            'Yderligere Fysik B og Kemi C
             If FyB = True And KeC = True Then
                 ByggeriOgTransport.LBox_Byggeri.Items.Add("Arkitektur og Design")
                 ByggeriOgTransport.LBox_Byggeri.Items.Add("By-, Energi- og Miljøplanlægning")
@@ -194,18 +215,53 @@
                 ByggeriOgTransport.LBox_Byggeri.Items.Add("Landskabsarkitektur")
             End If
         End If
-
+        'Matematik C
         If MaC = True Then
             ByggeriOgTransport.LBox_Byggeri.Items.Add("Bygningskonstruktør")
         End If
-
+        'Matematik C og Engelsk C
         If MaC = True And EnC = True Then
             ByggeriOgTransport.LBox_Byggeri.Items.Add("Designteknologi")
         End If
-
+        'Matematik C og Fysik C
         If MaC = True And FyC = True Then
             ByggeriOgTransport.LBox_Byggeri.Items.Add("EnergiTeknolog")
         End If
+    End Sub
 
+    Private Sub TransportOgLogistik()
+        ByggeriOgTransport.LBox_Transport.Items.Add("Autoteknolog")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Flyveleder i flyvevåbnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Kontrol- og varslingsofficer i Flyvevåbnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Maskinteknisk officer i Søværnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Operationsstøtteofficer i Flyvevåbnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Pilot i Flyvevåbnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Plan, by og process")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Skibsfører")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Skibsofficer")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Taktisk officer i Søværnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Teknikofficer i Flyvevåbnet")
+        ByggeriOgTransport.LBox_Transport.Items.Add("Våben- og elektronikteknisk officer i Søværnet")
+        'Matematik A og Fysik B
+        If MaA = True And FyB = True Then
+            ByggeriOgTransport.LBox_Transport.Items.Add("Diplomingeniør - mobilitet, transport og logistik")
+        End If
+        'Engelsk A og Matematik B og samfundsfag B eller Idéhistorie B
+        If (EnA = True And MaB = True And SamfB = True) Or (EnA = True And IhB = True And MaB = True) Then
+            ByggeriOgTransport.LBox_Transport.Items.Add("International Shipping and Trade")
+        End If
+        'Engelsk B og Matematik C
+        If EnB = True And MaC = True Then
+            ByggeriOgTransport.LBox_Transport.Items.Add("Logistikøkonom")
+        End If
+
+    End Sub
+
+    Private Sub AdgangskortSide_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UddannelsesUpdate()
+    End Sub
+
+    Private Sub AdgangskortSide_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Application.Exit()
     End Sub
 End Class
