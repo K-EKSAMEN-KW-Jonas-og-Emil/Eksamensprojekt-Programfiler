@@ -105,12 +105,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="StudieretningsSide.Designer.vb">
-      <DependentUpon>StudieretningsSide.vb</DependentUpon>
-    </Compile>
-    <Compile Include="StudieretningsSide.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdgangskortSide.resx">
